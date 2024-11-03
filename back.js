@@ -1,1 +1,2 @@
-console.log(1)
+let a = a;
+console.log(a)
