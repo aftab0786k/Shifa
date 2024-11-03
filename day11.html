@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        .box{
+            width:100px;
+            height:20px;
+            border:5px solid green;
+            padding:5px;
+            margin:10px;
+            transition:background-color 0.5s ease-in-out 0.5;
+        }
+        .box:hover{
+            background-color: blueviolet;
+        }
+        .a{
+            width:200px;
+            height:100px;
+            background-color: aqua;
+            border:2px solid black;
+            color:red;
+            padding:10px;
+            margin:10px;
+           
+        }
+        .a:hover{
+            /* transform: translate(20px,20px); */
+            /* transform:scale(1.5,1.5) ; */
+            transform:skew(30deg)
+        }
+        .sahil{
+            width:150px;
+            height:75px;
+            border:2px solid black;
+        }
+        .sahil:hover{
+            transform: rotate(45deg);
+        }
+        .b{
+            width:100px;
+            background-color: beige;
+            color:red;
+            height:45px;
+            padding:10px;
+            margin:10px;
+        }
+        .b:hover{
+            box-shadow: 10px 10px 5px green;
+        }
+        .position{
+           height:500px;
+           width:600px;
+           border:5px solid black;
+           border-radius:10px;
+        }
+        .static{
+          height:100px;
+          width:100px;
+          background-color:yellow;
+          color:red;
+          border:2px solid blue;
+          position: static;
+          margin:20px;
+        }
+        .relative{
+            height:100px;
+          width:100px;
+          background-color:yellow;
+          color:red;
+          border:2px solid blue;
+          margin:20px;
+          /* position: relative;
+          top:20px; */
+          /* left:20px; */
+          /* right: 40px; */
+        }
+        .absolute{
+            height:100px;
+          width:100px;
+          background-color:yellow;
+          color:red;
+          border:2px solid blue;
+          /* position: absolute; */
+          /* top:20px;
+          left:20px; */
+          margin:20px;
+        
+         
+        }
+        .fixed{
+            height:100px;
+          width:100px;
+          background-color:yellow;
+          color:red;
+          border:2px solid blue;
+          position: fixed;
+          top:20px;
+          margin:20px;
+        }
+
+        </style>
+</head>
+<body>
+    <!-- <div class="box">aftab</div>
+    <div class = "a">Shifa</div>
+     <div class="sahil">sahil</div>
+      <div class ="b">Image</div> -->
+      <div class ="position">
+        <div class="static">Static</div>
+      <div class="relative">Relative</div>
+       <div class="absolute">Absolute</div>
+        <div class="fixed">Fixed</div>
+      </div>
+      
+    <!-- CSS transition
+      transtion in css allow us to control the way in which transition takes places between the two states of the element.
+      properties like :width , leight , background , color;
+      used t create smooth & gradual effect during state change , like hover or focus;
+
+      Syntax: h1{
+      transition :property during timing-fn delay;
+      transtion shorthand:  property name /duration/timing function/delay;
+
+      property:- css property to transtion;
+      duration :the time in transition takes;
+      time-function:- specifes how to intermediate values are calculated: ed :ease-in-out,ease-in,ease-out ,linear
+       tran stion effect with the same speed in ease ,easein slow start ,easeout slow end, ease-in-out slow start & slow end;
+       when u hover your mouse over a element u can change the effect
+
+       css transform:-  the trnsform proerty in css enables to modify the shape , size & position of element
+      this is used to add effects like skew , scale , roatate , translate , etc on elments
+      the transformation can be 2d or 3d 
+      transform example 
+      translate(move)(R& B)((X&Y)):-it transform alongs X-axis & Y-axis
+      the translate method is used to move the element from its actual position along X-axis & Y-axis
+      syntax:- transform:translate(X,Y);
+               transform:translate(X);
+               transfrom: translate(y);
+               eg:_{
+               transform:-translate(50px,20px)
+               }
+               roatate :-
+               The roatate() method roates an element clockwise or (-) conuter clockwise according to a given degree . the degree is give in the paramater
+               eg: Rotate the element of degree like 45 degree;
+               eg :- h1{
+                transfrom :rotate(45deg);
+
+               }
+                scale(resize): it is used to increase or decrease the size of an element according to the parameter given for the width & height;
+                eg :makes the ele,emnt 1.5 timess its original size;
+                 transfrom :scale(X,Y),(X),(Y)
+                h1{
+                transform :scale(1)
+                }
+                skew : the skew methos skews an element along X & Y-axis by the given angles.
+                syntax :transform :skew (X,Y)(X),(Y);
+                eg:- h1{
+                trasnform:skew(30deg)
+                }
+                BOX shadow :- the box -shadow property in css is used to ass a shadow effect to an element;
+                what is offset
+                offset controls how far smtg is displaced from a reference point.
+                sytnax :- h1{
+                 box-shadow : h-offset v-offfset blur spread color;
+                 h-offset : horizonal offset of the shadow;
+                 v-off ser : vertical offset of the shadow;
+                 blur; optional : the blur radius;
+                 color: color of the shadow;
+                 background-image :url()
+                }
+  
+POSITION:-set how an elment is poisitoned in a document;
+
+position property gives the flexibility to control how an elelment is postioned within its container or in realtion to other element on the page
+ by slecting values like static , relative , absolute  & fixed , we can achives various layouts & design effects
+
+ position /;static , relative , absolute , fixed;
+ 
+ static:- this is he default value ;
+ :- elements are postioned in the normal flow of the document ;ignore:-t,l b,r , propertiss have no effect;
+ eg: h1{
+
+ position :static;
+ relative: the realtive position property is used to set the element relative ti its normal position the offset is relative to itself based on 
+ the value of top , righr , bottom & left ;
+ can be moved using top , r , b, l,
+ syntax: h1{
+ position : realative
+  top:2px;
+  left:3px
+ }
+  absolute :- if an absolute positoned element has no positioned , ancestor , it uses the document body & moved along with page scrolling
+   SYNTAX: h1{
+   position :absoulte;
+   top :50px;
+   left:0px;
+   }
+   fixed:-the element is removed from the normal document flow & no space is created for the element in the page layout .
+   postion relative to the browser window/viewport . if stays in the same place even if the page is scrolled;
+   eg: h1{
+   position:fixed;
+    top:20px;
+    right:30px;
+   }
+ }
+
+
+      }
+      
+    -->
+</body>
+</html>

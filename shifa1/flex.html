@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        .container{
+            width:500px;
+            height:500px;
+            border:2px solid black;
+            display:flex;
+            flex-direction: row;
+            justify-content:center;
+            /* parent element container
+                child element flex items
+                 */
+
+                 flex-wrap: wrap;
+                 align-content: space-evenly;
+                 /* align-items: center; */
+        }
+        .items{
+            width:100px;
+            height:100px;
+            border:2px solid black;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+     <div class="items">A</div>
+     <div class="items">B</div>
+     <div class="items">C</div>
+     <div class="items">D</div>
+     <div class="items">E</div>
+   </div>
+   <!-- flext container properties(parent element)
+    flex-direction(done)
+    flex-wrap
+    justify-content
+    align-items
+    align-content -->
+
+
+<!-- Patents container proeprtes:- Justify content:- the justify content property is used to align the items on the main-axis 
+      folllwing valuesof justify content :
+      justify-contet :flex-start , flex-end ,center , space-around, space between , space -evenly
+-->
+<!-- flex-direction :row main axis -hoizontal left to right
+                     row-reverse :main azis  horizonal way 
+                       right to left
+                        column main axis vertical  : top to bottom
+                        column-reverse :top to bottom
+                             vertical way;
+       -->
+                             <!-- Flex Wrap:- flex wraps tells our items stay on one line or wraps onto mutiples lines when there not enough space
+                              values: nowrap , wrap wrap-reverse
+                              sytnax: flex-wrap :nowrap
+
+                             
+                               -->
+
+                               <!-- Align Items :-Align itmes property used to align the flex items on the cross Axis,
+                                Align items tells items how to stand vertically inside their container.
+                                the align-slef property is used to override the align-items
+                                vlaues options : flex -start , flex-end -center , Baseline
+                                 -->
+                <!-- Align Content 
+                 :- the align the behaviour of the flex-wrap property it align flex lines
+                   It set the distribution of space Between & around content items along a flexbox cross-axis
+                   values: flex-start , flex-end ,center,space-between ,space-around ,space-evenly ,space-between -->
+    <!-- Flexbox  flexible box model inline block inline-block
+     Its a one dimensional layout method for arranging items in a row & column.
+     its a layout mode l that provide an easy & clean way to arrange items with a container flexbox can be useddul for creating small scale layout
+      & it it easier to design flexible resposive layout structure without usinggg float & postioned
+    
+    -->
+      <!-- flext items properties(child elemnt)
+        align-slef 
+        flex-basic
+        flex-grow
+        flex-shrink
+        align- self in flecboxx allow to individaually control how each flex items aligns within its container , overriding the containers default
+        alignment;align-self values : auto , flex-start,flex0end , baseline
+        flex-basic :use to ensure that elements take up the same amount of spaxe on the X-axid eg:-flex-basis
+        flex-grow :flex grow:1;
+        use to make elemnets bigger than the one next to them.
+        flex-shrin :-to reduce the size of certain elemnts ehen theres nt enough space 
+        eg:-flex-shrink
+        imp :- All the propert can be combined into a single property called flex eg: flex 1 3 100px
+         -->
+</body>
+</html>

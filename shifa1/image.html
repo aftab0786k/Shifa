@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <style>
+        .a{
+            width:500px; 
+            height:500px;
+            border:2px solid black;
+        }
+      .box{
+        width:100px;
+        height:100px;
+        background-color: aqua;
+        border:2px solid black;
+        display:inline-block;
+        margin:2px;
+       
+      }  
+      #b{
+        position: static;   
+         top :10px;
+        /* top right bottom left default */
+      }
+      /* #c{
+        position: relative;
+        top :10px;
+        left:10px;
+      } */
+       #d{
+        position: absolute;
+        top :50px;
+        left:20px;
+       }
+
+/* position static realtive ,absoulte fixed * if an absolute positoned elment has no positioned its ueses the document body 
+& moves along with pages scrolling/
+    </style>
+</head>
+<body>
+    <div class ="a">
+        <div class="box" id = "b">A</div>
+        <div class="box" id ="c">B</div>
+        <div class="box" id = "d">C</div>
+        <div class="box" id ="e">D</div>
+    </div>
+</body>
+</html>

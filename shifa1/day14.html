@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .nav{
+            border:2px solid black;
+            background-color: antiquewhite;
+            overflow: hidden;
+        }
+        a{
+           /* display:flex;
+           flex-direction: column;
+           justify-content: space-evenly; 
+           flex-wrap: wrap;
+           align-content: space-evenly; */
+           /* display: block;
+           text-decoration: none; */
+           /* /* float: left; */
+           float: left; /* Link ko left side align karna */
+            display: block; /* Block level element */
+            color: black; /* Text color */
+            
+        }
+        .b{
+            text-align: center;
+            color:blue;
+            position: relative;
+            top: 10px;
+            left:5px;
+            font-size: 25px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .a{
+            text-align: center; /* Center align text */
+            padding: 14px 20px; /* Padding */
+            text-decoration: none;
+            position: relative;
+            left:800px;
+        }
+        .a:hover{
+            background-color: aqua;
+        }
+        
+        @media (max-width) {
+             a{
+                float: none;
+                width:100%
+             }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class ="nav">
+          <a href ="#" class ="b">MyWbsite</a>
+          <a href ="#" class ="a">Home</a>
+          <a href ="#" class ="a">ContactUs</a>
+          <a href ="#" class ="a">About Us</a>
+          <a href ="#" class ="a">Login</a>
+
+          
+    </div>
+</body>
+</html>

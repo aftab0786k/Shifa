@@ -1,0 +1,12 @@
+what is css full form?
+how to denote id & class i told u na
+tell me . is class & id # u got it
+every browser recognise around 140 namdco lors this a first way simple wayeample color:black
+firstfall we recoginse this color this way dentoe #ffffff ff ==rr ff ==gg ff== bb
+specificity,precedence,preference,priority
+inline , id , class , elements
+jb bhi hum attributes write krnge toh key pair value mein write krnge
+  
+    color:red:::key pair value
+    id ="shifa"; elements
+ 

@@ -1,0 +1,80 @@
+<!-- today dicuss three topic ,media query , grid , units,, this three topic our css  done 
+   first fall  we have top  start small project   -->
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id Card</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            
+        }
+        
+        .c{
+          border:2px solid black;
+             width: 300px;
+            height:225px;
+            display: inline-block;
+            border-radius: 10px;
+            width:200px;
+            position: relative;
+            top: 250px;
+            left:250px;
+            overflow: hidden;
+          
+    
+            
+        }
+        .a{
+            /* background-color: antiquewhite; */
+            border-radius: 5px;
+            overflow: hidden;
+            padding: 10px;;
+        }
+        .d{
+         width:100%;
+         height:auto;
+
+         object-fit: cover;
+         max-height: 150px;
+         border-radius: 2px 0 2px 0;
+            
+         /* position: relative;
+          bottom:17px ;
+          border-radius: 10px;
+           */
+        }
+        #b{
+            font-size: 1.8em;
+            margin:0 0 0 20px;
+             position: relative;
+             
+            
+        }
+        #c{
+            font-size: 1.2em;
+            margin: 0 0 0 40px;
+        }
+        .c:hover{
+            box-shadow: 10px 5px 2px yellow;
+
+        }
+        
+
+    </style>
+
+   </head>
+   <body>
+     <div class ="c">
+        <img class ="d" src ="./samsung.jpg">
+        <div class ="a">
+            <h3 class ="b" id ="b"> Shifa Miya</h3>
+            <p class ="b" id ="c"> IT Software</p>
+        </div>
+     </div>
+    
+   </body>
+   </html>
